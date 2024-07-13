@@ -1,0 +1,162 @@
+.delever{
+  margin-top: 80px;
+  padding: 80px 0;
+  background-color: #f4f7ff;
+
+  &__title{
+    color: rgba(255,60,0,0.5686274509803921);
+    margin-left: 50%;
+    line-height: 20px;
+    &__sub{
+      background-color: rgba(255,87,34,0.2);
+      display: flex;
+      padding: 5px ;
+      border-radius: 48px;
+
+      align-items: center;
+      width: 100px;
+      img{
+        width: 30px;
+      }
+      p{
+        margin: 0;
+        display: inline-block;
+        line-height: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+  &__wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  &__left{
+    width: 45%;
+    padding-bottom: 40px;
+
+    &__text{
+      font-size: 24px;
+      line-height: 40px;
+      margin-bottom: 30px;
+    }
+
+
+  }
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item{
+      width: 31.5%;
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #e0e8ff;
+
+      span{
+        line-height: 40px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+
+    }
+  }
+
+  &__right{
+    border-radius: 24px;
+    padding-top: 30px;
+    width: 45%;
+    background-image: url("https://udevs.io/static/bg_pattern-bfa00f19a06604ab492274cd3d9ea5cf.png");
+    background-position: center;
+
+    &__img{
+      max-width: 100%;
+    }
+  }
+}
+
+
+@media  only screen and (max-width: 1200px) {
+  .delever{
+
+
+    &__left{
+      width: 50%;
+    }
+
+
+  }
+}
+
+@media  only screen and (max-width: 992px) {
+  .delever{
+
+    &__title{
+      margin: 0;
+      &__sub{
+        margin-bottom: 20px;
+      }
+    }
+    &__wrapper{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &__left{
+      width: 70%;
+      &__text{
+        text-align: center;
+        margin: 20px 0;
+        font-size: 16px;
+        line-height: 30px;
+      }
+
+    }
+
+    &__list{
+      &__item{
+        margin-top: 10px;
+        span{
+          font-size: 14px;
+        }
+      }
+    }
+    &__right{
+      width: 70%;
+    }
+
+
+  }
+}
+
+
+@media  only screen and (max-width: 776px) {
+  .delever{
+    &__title{
+      line-height: 40px;
+    }
+    &__left{
+      width: 100%;
+    }
+
+    &__right{
+      width: 100%;
+    }
+
+  }
+}
+
+@media  only screen and (max-width: 400px) {
+  .delever{
+
+    &__list{
+      &__item{
+        width: 49%;
+      }
+    }
+
+  }
+}

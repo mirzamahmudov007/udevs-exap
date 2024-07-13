@@ -1,0 +1,122 @@
+.tools{
+    &__opacity{
+        opacity: 0.4;
+    }
+
+    &__lists{
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 10px;
+    }
+    &__card{
+        margin-top: 0px;
+        padding: 10px;
+         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+            border-radius: 8px;
+       
+        p{
+            font-size: 12px;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        
+    }
+    .frontend{
+            background-color: #c6d6ff;
+        }
+        .backend{
+            background-color: #bddaed;
+        }
+        .mobil{
+            background-color: #dbe5ff;
+        }
+        .ux{
+background-color:#ced6ee ;
+        }
+        .devops{
+background-color:#a8bfff ;
+        }
+        .infrastructure{
+background-color:#d1dde8 ;
+        }
+        .testing{
+background-color: #e1e9fe;
+        }
+}
+
+@media only screen and (max-width: 1200px) {
+    .tools {
+        &__card{
+            padding: 5px;
+
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .tools {
+
+        &__lists{
+            grid-template-columns: repeat(10, minmax(0, 1fr));
+            gap: 10px;
+        }
+        &__card{
+            width: 100%;
+            padding: 5px;
+
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    .tools {
+        &__lists{
+            grid-template-columns: repeat(7, minmax(0, 1fr));
+            gap: 5px;
+        }
+        &__card{
+            width: 100%;
+            padding: 5px;
+
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .tools {
+        &__lists{
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+            gap: 5px;
+        }
+        &__card{
+            width: 100%;
+            padding: 5px;
+
+            p{
+                font-size: 9px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .tools {
+        &__lists{
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 5px;
+        }
+    }
+}
