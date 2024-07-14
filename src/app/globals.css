@@ -18,3 +18,23 @@ body {
   --background-end-rgb: 255, 255, 255;
 }
 
+.fixed__message{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius:50%;
+  background-color: #1b5bf7;
+  transition: all 0.5s ease;
+  box-shadow: 0px 0px 10px 1px black;
+}
+.fixed__message svg{
+position: absolute;
+top: 35%;
+left: 30%;
+}
+.fixed__message:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}

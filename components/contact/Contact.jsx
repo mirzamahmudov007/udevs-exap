@@ -9,21 +9,18 @@ function Contact() {
                 </h1>
                 <div className={'contact__wrapper'}>
                     <div className={'contact__left'}>
-                        <div className="input-container ic1">
-                            <input id="firstname" className="input" type="text" placeholder=""/>
-                            <div className="cut"></div>
-                            <label htmlFor="firstname" className="placeholder">First name</label>
-                        </div>
-                        <div className="input-container ic1">
-                            <input id="firstname" className="input" type="text" placeholder=""/>
-                            <div className="cut"></div>
-                            <label htmlFor="firstname" className="placeholder">First name</label>
-                        </div>
+                        <input className="nameInput" type="text" placeholder="Name"/>
+
+                        <input className="nameInput mt-4" type="text" placeholder="Your Email" />
+
+                        <textarea className="mt-4" placeholder="
+Briefly describe your project
+">
 
 
-                        <button className={'navbars__link__btn mt-3'}>
-                            Send
-                        </button>
+                        </textarea>
+
+                        <button className="form__btn mt-2">Send</button>
                     </div>
                     <div className={'contact__right'}>
                         <p>

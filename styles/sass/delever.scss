@@ -46,11 +46,11 @@
   }
 
   &__list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
     &__item{
-      width: 31.5%;
+      width: 100%;
       margin-top: 20px;
       padding: 10px;
       border-radius: 8px;
@@ -153,8 +153,11 @@
   .delever{
 
     &__list{
+      display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
       &__item{
-        width: 49%;
+        width: 100%;
       }
     }
 
